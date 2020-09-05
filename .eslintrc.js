@@ -4,8 +4,9 @@ module.exports = {
     es6: true,
   },
   extends: [
-    'airbnb',
-    "prettier"
+    'prettier',
+    'prettier/react',
+    'airbnb'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -22,6 +23,10 @@ module.exports = {
     'prettier'
   ],
   rules: {
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'react/prop-types': 'off',
     'react/jsx-filename-extension': [
       'warn',
       {
