@@ -9,9 +9,12 @@ const Splash: React.FC = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
-    setTimeout(() => {
-      navigation.navigate('Home');
-    }, 900);
+    const unsubscribe = navigation.addListener('focus', () => {
+      setTimeout(() => {
+        navigation.navigate('Home');
+      }, 2500);
+    });
+    return unsubscribe;
   }, []);
 
   return (
