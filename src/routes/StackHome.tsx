@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Splash from '../pages/Splash';
-import Home from '../pages/Home';
+import TabHome from './TabHome';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +17,7 @@ function StackHome() {
         />
         <Stack.Screen
           name="Home"
-          component={Home}
+          component={TabHome}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, CommonActions } from '@react-navigation/native';
 import LottieView from 'lottie-react-native';
 import { Container, LogoContainer, AnimationContainer } from './styles';
 import loadingAnimation from '../../assets/animations/loading-animation.json';
@@ -11,7 +11,12 @@ const Splash: React.FC = () => {
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       setTimeout(() => {
-        navigation.navigate('Home');
+        navigation.dispatch(
+          CommonActions.reset({
+            index: 0,
+            routes: [{ name: 'Home' }],
+          })
+        );
       }, 2500);
     });
     return unsubscribe;

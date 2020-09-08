@@ -36,5 +36,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-indent': 'off',
     'react/jsx-one-expression-per-line': 'off',
+    'comma-dangle': 'off',
+    'object-curly-newline': 'off',
   },
 };
