@@ -26,6 +26,8 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'operator-linebreak': 'off',
     'react/prop-types': 'off',
     'react/jsx-filename-extension': [
       'warn',

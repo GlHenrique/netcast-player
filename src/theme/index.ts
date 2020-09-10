@@ -5,6 +5,7 @@ interface Theme {
     primary: string;
     secondary: string;
     background: string;
+    red: string;
   };
 }
 
@@ -15,6 +16,7 @@ const theme: Theme = {
     primary: '#173355',
     secondary: '#e91e63',
     background: '#FEFEFE',
+    red: '#F40000',
   },
 };
 

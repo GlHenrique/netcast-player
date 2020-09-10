@@ -13,7 +13,7 @@ export const BlueContainer = styled.View`
 `;
 
 export const CardContainer = styled.View`
-  top: -75px;
+  top: -106.5px;
   align-items: center;
 `;
 
@@ -26,19 +26,19 @@ export const Card = styled.View`
   background: ${theme.colors.background};
   border-radius: 4px;
   width: 90%;
-  height: 150px;
+  height: 213px;
 `;
 
 export const FormContainer = styled.View`
   padding: 16px;
   flex: 1;
-  justify-content: space-between;
 `;
 
 export const InputContainer = styled.View`
   border: 1px solid ${theme.colors.primary};
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 16px;
+  margin-bottom: 16px;
 `;
 
 export const Input = styled.TextInput.attrs({
@@ -49,8 +49,30 @@ export const Input = styled.TextInput.attrs({
   autoComplete: false,
 })``;
 
+export const SubmitContainer = styled.View`
+  align-items: center;
+`;
+
+export const SubmitButton = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.5,
+})`
+  background: transparent;
+  border: 1px solid ${theme.colors.primary};
+  border-radius: 4px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+`;
+
+export const SubmitButtonText = styled.Text`
+  font-family: ${theme.font};
+  color: ${theme.colors.primary};
+`;
+
 export const ListContainer = styled.View`
   padding: 16px;
+  top: -48px;
 `;
 
 export const ListItem = styled.TouchableOpacity`
